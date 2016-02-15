@@ -38,7 +38,7 @@ def main():
     This will be called if the script is directly envoked.
     '''
     # Set the variable work_dir with the first argument passed
-    if len(sys.argv) >=4:
+    if len(sys.argv) >=3:
         work_dir = sys.argv[1]
         # Set the variable old_ext with the second argument passed
         old_ext = sys.argv[2]
