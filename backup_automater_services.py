@@ -17,6 +17,8 @@ todaystr=today.isoformat()		# Format it so we can use the format to create the d
 
 confdir=os.getenv("my_config")					# Set the variable by getting the value from the OS setting
 dropbox=os.getenv("dropbox") 					# Set the variable by getting the value from the OS setting
+if dropbox == None:     
+    print "please install dropbox"
 conffile = ('services.conf') 							# Set the variable as the name of the configuration file
 conffilename=os.path.join(confdir, conffile)  	# Set the variable by combining the path and the file name
 sourcedir=os.path.expanduser('~/Library/Services/')													# Source directory of where the scripts are located
